@@ -1,10 +1,37 @@
+.theme-light .decorative-text {
+  display: none;
+}
+
+
 /*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root {
+  --page-bc-image: url(../images/cover-image-light.png);
+  --main-bc-color: #f1b2ce;
+  --accent-color: #FF8DCB; 
+  --main-head-color: rgba(53, 52, 48, 1);
+  --nav-color: #353430;
+  --nav-hover-color: rgb(53 52 48 / 0.4);
+  --text-color: #353430;
+  --section-head-color: #353430;
+  --header-color: #FFC2E6;
+  --footer-color: #FFC2E6;
+}
 
 :root.theme-light {
+  --page-bc-image: url(../images/cover-image-light.png);
+  --main-bc-color: #f1b2ce;
+  --accent-color: #FF8DCB; 
+  --main-head-color: rgba(53, 52, 48, 1);
+  --nav-color: #353430;
+  --nav-hover-color: rgb(53 52 48 / 0.4);
+  --text-color: #353430;
+  --section-head-color: #353430;
+  --header-color: #FFC2E6;
+  --footer-color: #FFC2E6;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
