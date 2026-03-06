@@ -9,9 +9,9 @@
   переключая тему
 */
 :root {
-  --page-bc-image: url(../images/cover-image-light.png);
   --main-bc-color: #f1b2ce;
-  --accent-color: #FF8DCB; 
+  --page-bc-image: url(../images/cover-image-light.png);
+  --accent-color: #FF8DCB;
   --main-head-color: rgba(53, 52, 48, 1);
   --nav-color: #353430;
   --nav-hover-color: rgb(53 52 48 / 0.4);
@@ -22,9 +22,9 @@
 }
 
 :root.theme-light {
-  --page-bc-image: url(../images/cover-image-light.png);
   --main-bc-color: #f1b2ce;
-  --accent-color: #FF8DCB; 
+  --page-bc-image: url(../images/cover-image-light.png);
+  --accent-color: #FF8DCB;
   --main-head-color: rgba(53, 52, 48, 1);
   --nav-color: #353430;
   --nav-hover-color: rgb(53 52 48 / 0.4);

@@ -1,28 +1,29 @@
 .theme-dark .decorative-text {
   display: block;
 }
+
 /*
   Специально для тёмной темы при наличии класса,
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
 :root {
-  --page-bc-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
   --main-bc-color: #000028;
+  --page-bc-image: url(../images/cover-image.png);
   --text-color: #f1b2ce;
   --nav-color: #ff0070;
   --nav-hover-color: rgb(255 0 112 / 0.4);
   --main-head-color: #000028;
   --section-head-color: #ff0070;
   --header-color: #DB00FF;
-  --footer-color: #db00ff; 
+  --footer-color: #db00ff;
 }
 
 :root.theme-dark {
-  --page-bc-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
   --main-bc-color: #000028;
+  --page-bc-image: url(../images/cover-image.png);
   --text-color: #f1b2ce;
   --nav-color: #ff0070;
   --nav-hover-color: rgb(255 0 112 / 0.4);
