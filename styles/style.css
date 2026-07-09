@@ -9,15 +9,20 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--main-bc-color);
+  align-items: center;
+
+  @media (width >= 768px) {
+    gap: 60px;
+  }
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 /* стили для хэдера */
 .header {
+  display: grid;
   height: 100vh;
   width: 100%;
   min-height: 668px;
-  display: grid;
   justify-self: center;
   align-self: center;
   grid-template-rows: repeat(3, 1fr);
@@ -33,7 +38,7 @@
 }
 
 .decorative-text {
-  display: block;
+  display: var(--display-rec);
   position: absolute;
   text-transform: uppercase;
   font-family: var(--main-font);
@@ -50,15 +55,8 @@
     margin-block-start: 20px;
     margin-inline-end: 35px;
   }
-
-  @media (prefers-color-scheme: light) {
-    display: none;
-  }
 }
 
-.theme-light .decorative-text {
-  display: none;
-}
 
 .decorative-text::after {
   content: '';
@@ -82,13 +80,14 @@
 
   @media (width >=768px) {
     align-self: end;
-    padding-block-end: 50px;
+    margin-block-end: 50px;
   }
 
   @media (width >=1024px) {
     justify-self: center;
     align-self: start;
     margin-block-start: 16px;
+    margin-block-end: 0;
   }
 }
 
@@ -173,6 +172,7 @@
 
   @media (width >=1024px) {
     margin-block-start: 50px;
+    padding-inline-start: 5px;
   }
 }
 
@@ -234,13 +234,13 @@
   padding-inline-end: 10px;
 
   @media (width >=768px) {
-    padding-inline-start: 17px;
-    padding-inline-end: 7px;
     gap: 80px;
-    margin-block-start: 20px;
+    padding-inline-start: 20px;
+    padding-inline-end: 5px;
   }
 
   @media (width >=1024px) {
+    width: 100%;
     padding-inline-start: 20px;
     padding-inline-end: 5px;
   }
@@ -269,8 +269,6 @@
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
   }
-
-
 }
 
 .attention-text {
@@ -337,17 +335,14 @@
 }
 
 .content_gallery {
-  margin-block-start: -10px;
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--main-gap);
-  grid-auto-flow: dense;
 
   @media (width >=768px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     margin-block-start: -3px;
-    max-block-size: 780px;
+    gap: 20px;
   }
 
   @media (width >=768px) {
@@ -382,7 +377,12 @@
 .gallery {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+}
+
+@media (width <= 768px) {
+  .gallery {
+    gap: 10px;
+  }
 }
 
 .gallery_image {
@@ -394,11 +394,6 @@
   object-fit: cover;
 }
 
-@media (width >=768px) {
-  .gallery .content-title {
-    grid-column: -3 / -1;
-  }
-}
 
 /* конец стилей для main */
 /* стили для футера */
@@ -409,14 +404,7 @@
   min-height: 668px;
   position: relative;
   justify-content: center;
-
-  @media (width >=768px) {
-    margin-block-start: 23px;
-  }
-
-  @media (width >=1024px) {
-    margin-block-start: 267px;
-  }
+  width: 100%;
 }
 
 .footer-title {
