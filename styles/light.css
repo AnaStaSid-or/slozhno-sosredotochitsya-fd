@@ -1,23 +1,8 @@
-
 /*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root {
-  --main-bc-color: #f1b2ce;
-  --page-bc-image: url(../images/cover-image-light.png);
-  --accent-color: #FF8DCB;
-  --main-head-color: rgba(53, 52, 48, 1);
-  --nav-color: #353430;
-  --nav-hover-color: rgb(53 52 48 / 0.4);
-  --text-color: #353430;
-  --section-head-color: #353430;
-  --header-color: #FFC2E6;
-  --footer-color: #FFC2E6;
-  --display-rec: none;
-}
-
 :root.theme-light {
   --main-bc-color: #f1b2ce;
   --page-bc-image: url(../images/cover-image-light.png);
@@ -49,5 +34,5 @@
     --header-color: #FFC2E6;
     --footer-color: #FFC2E6;
     --display-rec: none;
-  } 
+  }
 }
