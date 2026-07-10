@@ -383,6 +383,11 @@
 .gallery {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+
+  @media (width >=768px) {
+  gap: 20px;
+  }
 }
 
 .gallery_image {
